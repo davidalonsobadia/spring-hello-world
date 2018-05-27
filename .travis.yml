@@ -3,7 +3,7 @@ jdk:
 - oraclejdk8
 env:
   global:
-    secure: ebkiuVZxh2Q5lRqsqIerTf/fh4ZqWwme/SNyetPICKSoxq9lmKQ1xA5gtqaOQdxzAmBY1B24Mh0/SHgIx52xjid/q92qEt5MQUfeLvmiS/LpJNuXIfmpc6ez+dSESsG1Sp+eK2FYmLkU3qGXPufaJWBTpCNKy1/sM90OqHFiGPNhSv6sMpS2Po0EhoG096gXR3ZUL2OFqYEp+qoblS6mJlETDB8VD6lbXoykV6SwiBgudXQplRHPHgtlVblcZ4Gz8IzA9mDEz7Jj93maqT58XIHMVhxhg8pU5CtW4xWLMbJ1TDx2B/8B91UNldWc7LxKHQMQAverJVAaku2SQl+h3mGl00fX5uOvzJ9L5tsx1wFHaFJmUhT0v9ZNIxC1zRvSLuni9GGBUC+WV+IWgA/92toLEgr5ErB9smDpUABe4CaRMZJIRl0OkoBHx032CF7Y0tKo3xnivK1XIyTEHck/uC7S6XTQKUqDz+pJsgzYL+53kliqofvZCme55DKssBMuKph5fcBZ9e/A90iLuhGY8HYIjqHYnv7mcNnqjSthBFIMk/7sAgMHWH4+NCEj8zkqBEg8yuarDXsSOhvzXoQJFpr1wqBLGdzhiNRNJFUemeFVQVD0D20b20ymqSQ1m6Xs14ja0ugdJOoMpUhMnSLOUe7ACEzNGVDtjQRVY82cXtg=
+    secure: "ebkiuVZxh2Q5lRqsqIerTf/fh4ZqWwme/SNyetPICKSoxq9lmKQ1xA5gtqaOQdxzAmBY1B24Mh0/SHgIx52xjid/q92qEt5MQUfeLvmiS/LpJNuXIfmpc6ez+dSESsG1Sp+eK2FYmLkU3qGXPufaJWBTpCNKy1/sM90OqHFiGPNhSv6sMpS2Po0EhoG096gXR3ZUL2OFqYEp+qoblS6mJlETDB8VD6lbXoykV6SwiBgudXQplRHPHgtlVblcZ4Gz8IzA9mDEz7Jj93maqT58XIHMVhxhg8pU5CtW4xWLMbJ1TDx2B/8B91UNldWc7LxKHQMQAverJVAaku2SQl+h3mGl00fX5uOvzJ9L5tsx1wFHaFJmUhT0v9ZNIxC1zRvSLuni9GGBUC+WV+IWgA/92toLEgr5ErB9smDpUABe4CaRMZJIRl0OkoBHx032CF7Y0tKo3xnivK1XIyTEHck/uC7S6XTQKUqDz+pJsgzYL+53kliqofvZCme55DKssBMuKph5fcBZ9e/A90iLuhGY8HYIjqHYnv7mcNnqjSthBFIMk/7sAgMHWH4+NCEj8zkqBEg8yuarDXsSOhvzXoQJFpr1wqBLGdzhiNRNJFUemeFVQVD0D20b20ymqSQ1m6Xs14ja0ugdJOoMpUhMnSLOUe7ACEzNGVDtjQRVY82cXtg="
 addons:
   sonarcloud:
     organization: "davidalonsobadia-github"
@@ -11,4 +11,4 @@ addons:
       secure: $SONAR_TOKEN
 script:
 - "./mvnw clean install -B"
-- "./mvnw clean org.jacoco:jacoco-maven-plugin:prepare-agent package sonar:sonar"
+- "./mvnw clean org.jacoco:jacoco-maven-plugin:prepare-agent package sonar:sonar  -Dsonar.host.url=https://sonarqube.com -Dsonar.login=$SONAR_TOKEN"
