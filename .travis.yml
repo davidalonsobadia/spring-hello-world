@@ -5,6 +5,6 @@ script:
 - "./mvnw clean install -B"
 deploy:
   provider: heroku
-  app: demo_first_app
+  app: testing-travis-integration
   api_key:
     secure: cnEIxwMl0jvRTmyvFGogJvcNbyAYnhR7vAbgatrvplLLG9FbseOu07rXoQmY9erxVynE+UJ9xk1m0/lmEAv9xROXcFBX6ei4fvT/9dCH1EWKC7/WuaKt0nXR2ifHFnkiA3FwbtZQsD9e88LVZECDyeAefP0/4QuHG+d/l80/je99GgPwZzyFKYeVGMmaMgAyO4vzBN+0nLnZ/15cKcJZCy6W8AXy1oXTsh2Iuh/MWX3lovLxbp/6LRy10aKqmdWcE5fu5aOiBx4ZF2/BRSAajiiEWp6udpN/Em7GyKb2w/X6VfYIy1cFKKJQIVvM46Cl45ucix6NjdbSndmP6+hbw+KB6FEneC4eCuW+6vni7zwq8/Z3VfaSGQbUUOncpNG6oxuD6zXXemBk9Oh++z554JZm+gNEIC9PS59YJHU5S8uP7ZJC1gginIvJ4VZdSmlTXw1g3zPG6Mxu9c6FgyNfm/rwviI20GcaeFOGR5jnQel6ebzQST4ZTfc3mzCDzpb2XG7lmTzmLKo38k0bDIwPAsQyDg6StWt7S+JXFzaMgIoM4f9YCEliNSIX/3Um9Xw4LjK4iAESMpynVroKONoE/xg0hD2udWHm/oqMTH0oIUGCZlPVFyjrYHIuHqlX19ZEa9XW/3TJ4IJzNZ5joNYFuilnFWPxnkclMGW4YEt44SU=
